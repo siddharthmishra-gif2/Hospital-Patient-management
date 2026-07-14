@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hospital Management System</title>
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+
+    <div class="header">
+        <i class="fa-solid fa-hospital hospital-icon"></i>
+        <h1>Hospital Management System</h1>
+        <p>Patient Registration Portal</p>
+    </div>
+
+    <form action="/add-patient" method="POST">
+
+        <div class="input-box">
+            <label>
+                <i class="fa-solid fa-user"></i>
+                Patient Name
+            </label>
+
+            <input
+                type="text"
+                name="name"
+                placeholder="Enter Full Name"
+                required>
+        </div>
+
+        <div class="row">
+
+            <div class="input-box">
+                <label>
+                    <i class="fa-solid fa-calendar"></i>
+                    Date of Birth
+                </label>
+
+                <input
+                    type="date"
+                    name="dob"
+                    required>
+            </div>
+
+            <div class="input-box">
+                <label>
+                    <i class="fa-solid fa-virus"></i>
+                    Disease
+                </label>
+
+                <input
+                    type="text"
+                    name="disease"
+                    placeholder="Disease Name"
+                    required>
+            </div>
+
+        </div>
+
+        <div class="input-box">
+            <label>
+                <i class="fa-solid fa-location-dot"></i>
+                Address
+            </label>
+
+            <textarea
+                name="address"
+                rows="4"
+                placeholder="Enter Complete Address"
+                required></textarea>
+        </div>
+
+        <div class="input-box">
+            <label>
+                <i class="fa-solid fa-phone"></i>
+                Contact Number
+            </label>
+
+            <input
+                type="tel"
+                name="contact"
+                maxlength="10"
+                pattern="[0-9]{10}"
+                placeholder="Enter Mobile Number"
+                required>
+        </div>
+
+        <button type="submit" class="btn">
+            <i class="fa-solid fa-user-plus"></i>
+            Admit Patient
+        </button>
+
+    </form>
+
+    <div class="view-btn">
+        <a href="/patients">
+            <i class="fa-solid fa-bed"></i>
+            View Patient Details
+        </a>
+    </div>
+
+</div>
+
+</body>
+</html>

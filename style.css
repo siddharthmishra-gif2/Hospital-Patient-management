@@ -1,0 +1,190 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    margin:0;
+    font-family:'Poppins',sans-serif;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    padding:30px;
+
+    /* Professional Background */
+    background:
+    linear-gradient(rgba(7,36,77,0.75), rgba(7,36,77,0.75)),
+    url("https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+    background-attachment:fixed;
+}
+
+.container{
+    width:100%;
+    max-width:780px;
+    background:#ffffff;
+    border-radius:24px;
+    padding:40px 45px;
+
+    border:1px solid #d9e6f2;
+
+    box-shadow:
+        0 10px 25px rgba(0,0,0,0.08),
+        0 20px 60px rgba(13,71,161,0.12);
+
+    position:relative;
+    overflow:hidden;
+}
+
+.header{
+    text-align:center;
+    margin-bottom:30px;
+}
+
+.hospital-icon{
+    font-size:60px;
+    color:#1976d2;
+    margin-bottom:10px;
+}
+
+.header h1{
+    color:#0d47a1;
+    font-size:32px;
+    margin-bottom:8px;
+}
+
+.header p{
+    color:#666;
+    font-size:16px;
+}
+
+form{
+    width:100%;
+}
+
+.row{
+    display:flex;
+    gap:20px;
+}
+
+.row .input-box{
+    flex:1;
+}
+
+.input-box{
+    display:flex;
+    flex-direction:column;
+    margin-bottom:22px;
+}
+
+.input-box label{
+    font-weight:600;
+    color:#0d47a1;
+    margin-bottom:8px;
+    font-size:15px;
+}
+
+.input-box label i{
+    color:#1976d2;
+    margin-right:8px;
+}
+
+.input-box input,
+.input-box textarea{
+    width:100%;
+    padding:14px 16px;
+    border:2px solid #d6e4f0;
+    border-radius:10px;
+    font-size:15px;
+    transition:.3s;
+    outline:none;
+}
+
+.input-box textarea{
+    resize:vertical;
+    min-height:120px;
+}
+
+.input-box input:focus,
+.input-box textarea:focus{
+    border-color:#1976d2;
+    box-shadow:0 0 8px rgba(25,118,210,.25);
+}
+
+.btn{
+    width:100%;
+    padding:15px;
+    border:none;
+    border-radius:10px;
+    background:linear-gradient(to right,#1565c0,#42a5f5);
+    color:#fff;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:.3s;
+}
+
+.btn:hover{
+    transform:translateY(-3px);
+    box-shadow:0 10px 20px rgba(25,118,210,.35);
+}
+
+.btn i{
+    margin-right:8px;
+}
+
+.view-btn{
+    margin-top:25px;
+    text-align:center;
+}
+
+.view-btn a{
+    display:inline-block;
+    text-decoration:none;
+    background:#e3f2fd;
+    color:#1565c0;
+    padding:14px 28px;
+    border-radius:10px;
+    font-weight:600;
+    transition:.3s;
+}
+
+.view-btn a:hover{
+    background:#1565c0;
+    color:#fff;
+}
+
+.view-btn i{
+    margin-right:8px;
+}
+
+input::placeholder,
+textarea::placeholder{
+    color:#999;
+}
+
+@media(max-width:768px){
+
+    .container{
+        padding:25px;
+    }
+
+    .header h1{
+        font-size:26px;
+    }
+
+    .row{
+        flex-direction:column;
+        gap:0;
+    }
+
+    .hospital-icon{
+        font-size:50px;
+    }
+
+}
